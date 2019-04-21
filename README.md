@@ -1,13 +1,26 @@
 # 6262 
 ## Setup
 Download and install python 3.7
-``` sudo apt install python3.7 ```
+```
+sudo apt install python3.7 
+```
 
 
 ### Install dependencies
+Install pip
+```
+sudo apt install python3-pip
+```
+
 Install requests
+```
+python3 -m pip install requests
+```
 
 Install shodan
+```
+pip3 install shodan
+```
 
 Download source files
 You either get source files from unziping the gz file or download from our GitHub repo.
