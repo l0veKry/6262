@@ -20,7 +20,7 @@ def start(targeturl):
     os.chdir(path+"/"+targeturl)
     crawl_module1.mainfunc(targeturl)
     crawl_module2.mainfunc(targeturl)
-    #crawl_module3.mainfunc(targeturl)
+    crawl_module3.mainfunc(targeturl)
     os.chdir(path)
     
 #main function, reads each line from .txt file and kicks off crawlers
