@@ -9,7 +9,7 @@ data_downloaded = []
 def get_virustotal(url):
     url_general = 'https://www.virustotal.com/vtapi/v2/domain/report'
     params = {'apikey': '150ba424391dcd507689bd802dfdea3f2bab8ac289bc4b31079abc541c44024f', \
-              'domain': line}
+              'domain': url}
     response = requests.get(url_general, params=params)
     data_general = response.json()
     # print(data_general)
