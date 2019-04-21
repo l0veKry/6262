@@ -1,9 +1,8 @@
 # 6262 
 ## Setup
 Download and install python 3.7
-'''
-sudo apt install python3.7
-'''
+  sudo apt install python3.7
+
 
 ### Install dependencies
 Install requests
