@@ -1,4 +1,4 @@
-# 6262 
+# 6262 Group 12
 ## Setup
 Download and install python 3.7
 ```
