@@ -37,6 +37,22 @@ https://github.com/FunctionRorscharch/6262.git/data
 ## How to use
 ### DCG algorithm
 The source file dcg_1.py and dcg_2.py are the modules of DCG algorith to process ranking data.
+It will generate a res.txt which contains all the url selected by DCG algorithm.
+```
 python3 dcg_1.py
-python3 dcg_2.py
+```
 
+This will process res.txt to another step and return a rankres.txt with all the information needed for the following process.
+```
+python3 dcg_2.py
+```
+### Crawling selected urls
+Start crawling. This is the main crawler, and it will generate a log directory which contains the analysis results of every url. Three .json files will appear under the dir of each url.
+```
+python3 crawler.py rankres.txt
+```
+Run filter function to extract useful information for the final report. 
+```
+python3 filter.py rankres.txt
+```
+After this script finished, there should be a data.json in the log/sample_url dir. You can copy data.json to /frontend/test, and you can open index.html in your browser to see the final results.  
